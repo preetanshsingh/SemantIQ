@@ -44,7 +44,7 @@ def analyze(payload: AnalyzeRequest) -> AnalyzeResponse:
     paa_questions = serp_data["paa"]
 
     # Step 2: scrape competitor pages in parallel (top 5 for speed)
-    competitor_texts = scrape_competitor_pages(organic_results, max_pages=5)
+    competitor_texts = scrape_competitor_pages(organic_results, max_pages=3)
 
     # Step 3: store everything in cache — all other endpoints use this
     serp_urls = [r["url"] for r in organic_results]

@@ -72,7 +72,7 @@ def url_analyze(payload: URLAnalyzeRequest) -> URLAnalyzeResponse:
     paa_questions = serp_data["paa"]
 
     # ── Step 4: Scrape competitor pages ─────────────────────────────────────
-    competitor_texts = scrape_competitor_pages(organic, max_pages=5)
+    competitor_texts = scrape_competitor_pages(organic, max_pages=3)
 
     if not competitor_texts:
         raise HTTPException(
