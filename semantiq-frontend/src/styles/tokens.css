@@ -1,0 +1,46 @@
+:root {
+  /* --- Brand palette --- */
+  --violet: #5B3AFF;
+  --violet-light: #8B6DFF;
+  --teal: #00C896;
+  --amber: #FF9F47;
+  --rose: #FF4D6D;
+
+  /* --- Surfaces --- */
+  --surface-0: #FFFFFF;
+  --surface-1: #F7F6FB;
+  --surface-2: #EFEDF8;
+
+  /* --- Borders --- */
+  --border: #E4E1F2;
+  --border-strong: #C9C4E8;
+
+  /* --- Text --- */
+  --text-primary: #1A1530;
+  --text-secondary: #4D466E;
+  --text-muted: #8A82AC;
+
+  /* --- Type --- */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', monospace;
+
+  /* --- Radii / spacing scale --- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+}
+
+/* Dark mode (system-preference driven) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-0: #15121F;
+    --surface-1: #1C1830;
+    --surface-2: #252040;
+    --border: #2E2850;
+    --border-strong: #423A6E;
+    --text-primary: #F1EEFB;
+    --text-secondary: #C2BBDE;
+    --text-muted: #8A82AC;
+  }
+}
